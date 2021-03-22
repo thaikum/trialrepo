@@ -1,0 +1,12 @@
+div{
+  width: 100%;
+}
+input{
+  border:none;
+  border-radius: .2em;
+  font-size: .8em;
+  height: 24px;
+  background: none;
+  outline: none;
+  border-bottom: .1em solid black;
+}

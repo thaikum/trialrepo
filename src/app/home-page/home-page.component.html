@@ -1,0 +1,14 @@
+<mat-toolbar color = 'primary'>
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="showNav()" *ngIf="onPhone">
+      <mat-icon class = "icon">{{icon }}</mat-icon>
+    </button>
+    <app-search-image *ngIf="onPhone"></app-search-image>
+    <app-navigation *ngIf="!onPhone"></app-navigation>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<app-side-nav [state]="state" *ngIf="onPhone" (Hide)="showNav()" (onGesture)="doSwipe($event)" swipe></app-side-nav>
+
+<app-image-list [images]="imageList"></app-image-list>
+<app-type-filter></app-type-filter>

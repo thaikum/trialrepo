@@ -1,0 +1,18 @@
+<div class = 'main-img-holder'>
+  <div class = 'image-holder'>
+    <a routerLink='/image'>
+      <img src="{{src}}" alt="alt">
+    </a>
+  </div>
+
+  <div class = "more-holder">
+    <button (click)="favorite()">
+      <mat-icon [color]="color">favorite</mat-icon>
+    </button>
+    <div class = "spacer"></div>
+    <button (click)="showDetails()">
+      <mat-icon>more_horiz</mat-icon>
+    </button>
+  </div>
+  <app-image-details [detailState]="detailStatus" (Hide)="showDetails()"></app-image-details>
+</div>

@@ -1,0 +1,53 @@
+.location-container{
+  display: flex;
+}
+
+legend mat-icon{
+  font-size: 1em;
+}
+
+.contact-info{
+  margin-left: 0.5em;
+}
+
+legend{
+  font-size: 1.5em;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-info mat-icon{
+  font-size: 1em;
+}
+
+.comments-holder mat-icon{
+  font-size: 2em;
+  vertical-align: top ;
+}
+fieldset{
+  border: 0;
+}
+.comments-holder legend{
+  line-height: 2em;
+}
+.comments{
+  transition: .2s ease-in-out;
+}
+.comments.opened{
+  display: block;
+}
+.comments.closed{
+  display: none;
+}
+.add-comment{
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.add-comment mat-icon{
+  font-size: 1.5em;
+}
+
+

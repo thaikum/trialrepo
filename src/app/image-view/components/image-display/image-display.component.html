@@ -1,0 +1,15 @@
+<div [style.background]="'url('+imageList[imageSrc]+')'" class = 'image-box'>
+  <div *ngIf="imageList.length > 0" class = 'image-navigator'>
+    <div>
+      <button mat-icon-button (click)="previousImage()" >
+        <mat-icon>arrow_back_ios</mat-icon>
+      </button>
+    </div>
+    <div>
+      <button mat-icon-button (click)="nextImage()" >
+        <mat-icon>arrow_forward_ios</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+

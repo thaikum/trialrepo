@@ -1,0 +1,58 @@
+.main{
+  width: 100%;
+  display: flex;
+}
+.icon-holder .mat-icon{
+  font-size: 3em;
+}
+.icon-holder{
+  width: 20%;
+}
+.details{
+  width: 80%;
+}
+fieldset{
+  border: none;
+}
+.number{
+  position: relative;
+  bottom: .2em;
+}
+.reply{
+  position: relative;
+  bottom: .4em;
+  color: slategrey;
+  left: .5em;
+  font-weight: bold;
+}
+.reply-section{
+  transition: .3s;
+  position: absolute;
+  z-index: 100;
+  border-radius: 1em;
+  /*border: 1px slategrey solid;*/
+  background: antiquewhite;
+}
+.reply-section.opened{
+  transform: scale(1);
+}
+.reply-section.closed{
+  transform: scale(0);
+}
+textarea{
+  border: none;
+  border-bottom:.1em dimgrey solid;
+  border-radius: 1em 1em 0 0;
+  padding: 1em;
+  z-index: 100;
+  overflow: auto;
+}
+textarea:focus{
+  outline: none;
+  /*background: white;*/
+}
+.send{
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}

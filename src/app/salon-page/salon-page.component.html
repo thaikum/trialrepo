@@ -1,0 +1,65 @@
+<app-back-toolbar></app-back-toolbar>
+<app-image-display [imageList] = 'salonImages'></app-image-display>
+<div class = "detail">
+  <div class="rating">
+    <mat-icon color="primary">grade</mat-icon>
+    <mat-icon color="primary">grade</mat-icon>
+    <mat-icon color="primary">grade</mat-icon>
+    <mat-icon color="accent">grade</mat-icon>
+  </div>
+</div>
+<div class="location-container">
+  <mat-icon color="primary">place</mat-icon>
+  <p>Lorem ipsum dolor sit</p>
+</div>
+<div class="contact-info">
+  <legend>
+    <mat-icon>contacts</mat-icon>
+    Contacts
+  </legend>
+  <ul>
+    <li>
+      <button mat-icon-button>
+        <mat-icon color="primary">call</mat-icon>
+      </button>
+      0789898989
+    </li>
+    <li>
+      <button mat-icon-button>
+        <mat-icon color="primary">call</mat-icon>
+      </button>
+      0789898989
+    </li>
+  </ul>
+
+  <div class="message">
+    <button mat-raised-button color="primary">
+      <mat-icon>message</mat-icon>
+      Message
+    </button>
+  </div>
+</div>
+
+<div class="comments-holder">
+  <fieldset>
+    <legend (click)="showComments()">
+      Comments
+      <mat-icon>{{dropIcon}}</mat-icon>
+    </legend>
+    <div class="comments {{commentState}}">
+     <button mat-button color="primary">
+       <div class = 'add-comment'>
+         <mat-icon>add</mat-icon>
+         Add a comment
+       </div>
+      </button>
+      <app-comment></app-comment>
+      <app-comment></app-comment>
+      <app-comment></app-comment>
+    </div>
+  </fieldset>
+</div>
+
+<section class = 'image-section'>
+  <app-image-list [images]="imageList"></app-image-list>
+</section>

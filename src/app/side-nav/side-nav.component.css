@@ -1,0 +1,27 @@
+div{
+  background-color: rgba(0,0,0,0.7);
+  transition: .3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+div.opened{
+  transform: translateX(0%);;
+}
+div.closed{
+  transform: translateX(-100%);
+}
+
+section{
+  position:relative;
+  width: 80%;
+  left:0px;
+  bottom:0px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 0px;
+}
+

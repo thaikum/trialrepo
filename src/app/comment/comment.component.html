@@ -1,0 +1,32 @@
+<div class="main">
+  <div class = 'icon-holder'>
+    <mat-icon>account_circle</mat-icon>
+  </div>
+  <div class = 'details'>
+    <fieldset>
+      <legend><b>Fredrick Maina</b></legend>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, veniam!
+      </p>
+      <div class = 'likes'>
+        <mat-icon color="accent">thumb_up_alt</mat-icon>
+        <span class = 'number'> 1 &nbsp; &nbsp; </span>
+        <mat-icon color="accent">thumb_down_alt</mat-icon>
+        <span class = 'reply' (click)="showReply()" *ngIf="state==='closed'" >REPLY</span>
+        <button mat-icon-button *ngIf="state === 'opened'">
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+
+        <div class="reply-section {{state}}" (click)="clicked()">
+          <div class = 'send'>
+            <textarea [(ngModel)]="reply"></textarea>
+            <button mat-icon-button (click)="showReply()">
+              <mat-icon color="primary">send</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+</div>

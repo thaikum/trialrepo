@@ -1,0 +1,32 @@
+.less-filter{
+  position: fixed;
+  width: 20%;
+  bottom:.5em;
+  left: .5em;
+}
+.categories{
+  width: 8em;
+  background-color: whitesmoke;
+  border-radius: .5em .5em 0 0;
+  transition: .3s ease-in-out;
+}
+.categories span{
+  padding:4em 0 4em 0;
+}
+.divider{
+  border-bottom: .1em solid rgba(0,0,0,0.5);
+}
+.cat{
+  padding: .6em 10em .6em .6em;
+}
+.cat:hover{
+  color: red;
+}
+
+.categories.opened{
+  transform: translateY(0%);;
+}
+.categories.closed{
+  transform: translateY(100%);
+}
+

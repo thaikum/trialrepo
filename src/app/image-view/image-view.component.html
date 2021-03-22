@@ -1,0 +1,29 @@
+<app-back-toolbar></app-back-toolbar>
+<app-image-display [imageList] = 'imageList'></app-image-display>
+<mat-divider></mat-divider>
+<app-image-info></app-image-info>
+<div class = 'details'>
+  <app-salon-profile></app-salon-profile>
+  <div class = 'cost'>
+    <fieldset>
+      <legend><u>cost:</u></legend>
+      <p>1000/=</p>
+    </fieldset>
+  </div>
+  <div class = 'description'>
+    <fieldset>
+      <legend><u>Description:</u></legend>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum distinctio enim laborum, magnam neque omnis qui repellat sapiente totam?
+      </p>
+    </fieldset>
+  </div>
+  <div class="comments">
+    <fieldset>
+      <legend><u>Comments:</u></legend>
+      <app-comment></app-comment>
+      <app-comment></app-comment>
+      <app-comment></app-comment>
+    </fieldset>
+  </div>
+</div>

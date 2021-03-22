@@ -1,0 +1,14 @@
+.main{
+  width: 70%;
+  display: flex;
+  border-radius: 1em;
+  background: aliceblue;
+  margin: 1em;
+}
+.mat-icon{
+  font-size: 3em;
+  width: 1em;
+}
+a{
+  text-decoration: unset;
+}

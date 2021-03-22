@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px){
+  div{
+    display: inline-block;
+    width: 100%;
+  }
+  a{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+  }
+  a:hover{
+    color:red;
+  }
+}

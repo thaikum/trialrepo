@@ -1,0 +1,13 @@
+<div class = 'less-filter'>
+  <div class = 'categories {{state}}' >
+    <div class = 'cat' (click)="switchCategory('Hair')">Hair</div>
+    <div class = 'divider'></div>
+    <div class = 'cat' (click)="switchCategory('Nails')">Nails</div>
+  </div>
+  <div>
+    <button mat-raised-button (click)="showCategory()">
+      {{category}}
+      <mat-icon>{{icon}}</mat-icon>
+    </button>
+  </div>
+</div>
