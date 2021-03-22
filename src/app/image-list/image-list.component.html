@@ -1,19 +1,7 @@
-<div *ngIf="!onPhone">
-  <section *ngFor="let image of images">
-    <app-imageholder src='{{image.src}}' alt='{{image.alt}}'></app-imageholder>
-  </section>
-</div>
-
-<div *ngIf="onPhone">
-  <ul>
-    <li *ngFor="let image of images">
+<div>
+  <ul [style.width.px]='width' *ngFor="let listImages of displayImages">
+    <li *ngFor="let image of listImages">
       <app-imageholder src='{{image.src}}' alt='{{image.alt}}'></app-imageholder>
     </li>
   </ul>
-<!--  <ul>-->
-<!--    <li *ngFor="let image of images.reverse()">-->
-<!--      <app-imageholder src='{{image.src}}' alt='{{image.alt}}'></app-imageholder>-->
-<!--    </li>-->
-<!--  </ul>-->
 </div>
-
